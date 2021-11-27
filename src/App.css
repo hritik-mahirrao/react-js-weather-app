@@ -2,37 +2,79 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
   display: flex;
+  width  : 100vw;
+  /* height: 300px; */
+  background-color: rgb(128, 128, 128);
+  justify-content : center;
+}
+
+.wrapper {
+  display: flex;
+  /* width: 50vw; */
+  padding         : 10px;
+  height          : 100%;
+  background-color: rgb(32, 32, 32);
+  flex-direction  : column;
+  align-items     : center;
+  border-radius   : 30px;
+}
+
+.search-bar {
+  margin-top   : 30px;
+  font-family  : "Cabin", sans-serif;
+  font-size    : 20px;
+  font-weight  : 500;
+  width        : 200px;
+  height       : 30px;
+  text-align   : center;
+  border-radius: 50px;
+}
+
+.information {
+  /* position: relative; */
+  left          : 10px;
+  width         : 100%;
+  display       : flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items   : center;
 }
 
-.App-link {
-  color: #61dafb;
+.information div {
+  font-family: "Cabin", sans-serif;
+  margin-top : 30px;
+  font-size  : 30px;
+  font-weight: 500;
+  color      : white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.information .temp {
+  padding         : 10px;
+  box-shadow      : 0px 0px 10px 10px rgba(255, 255, 255, 0.185);
+  color           : black;
+  background-color: rgb(255, 255, 255);
+  border-radius   : 10px;
 }
+
+.information .date {
+  padding  : 10px;
+  font-size: 20px;
+}
+/* .name {
+  transition: ease 0.4s;
+} */
+
+/* .name:hover {
+  text-shadow: 1px 1px 30px rgb(255, 255, 255);
+} */
+
+/* .name {
+  margin-top: 10px;
+  color     : white;
+}
+
+.temp {
+  margin-top: 10px;
+  color     : white;
+} */
